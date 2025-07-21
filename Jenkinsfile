@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/parasbansal2020/node-cicd-webhook.git'
+                git branch: 'main', url: 'https://github.com/parasbansal2020/node-cicd-webhook.git'
             }
         }
         stage('Install') {
